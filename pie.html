@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "UK Clothing Market Share (2019)"
+      },
+      
+      data: [
+      {
+
+       indexLabelPlacement: "outside",    //Try Changing to outside
+       type: "pie",
+       startAngle: 270,
+        color:"rgb(172, 184, 196)",  
+       dataPoints: [
+       {  y: 6, indexLabel:"M&S(C&H) 6%"},
+        {  y: 6, indexLabel:"Next UK ex-credit 6%"},
+        {  y: 5, indexLabel:"Primark UK 5%" },
+        {  y: 3, indexLabel:"Archadia 3%", color:"rgba(82,94,106,255)"},
+        {  y: 4, indexLabel:"TK Maxx 4%" },
+        {  y: 4, indexLabel:"JD Sports 4%" },
+        {  y: 2, indexLabel:"debenhams UK 2%", color:"rgba(82,94,106,255)"},
+        {  y: 3, indexLabel:"Sports Direct UK 3%" },
+        {  y: 2, indexLabel:"New Look UK 2%", color:"rgba(82,94,106,255)"},
+        {  y: 2, indexLabel:"H&M UK 2%" },
+        {  y: 2, indexLabel:"Matarian 2%" },
+        {  y: 2, indexLabel:"Rover Island 2%" },
+        {  y: 2, indexLabel:"ASOS 2%" },
+        {  y: 1, indexLabel:"Bochoo 1%" },
+        {  y: 1, indexLabel:"EWM 1%", color:"rgba(82,94,106,255)"},
+        {  y: 53, indexLabel:"Rest of market 53%" },
+       ]
+     }
+     ]
+   });
+
+    chart.render();
+
+//     //another chart
+//     var chart = new CanvasJS.Chart("chartContainer2", {
+//   title: {
+//     text: "UK Clothing Market Share (2019)",
+//   },
+//   legend: {
+//     verticalAlign: "center",
+//     horizontalAlign: "left",
+//     fontSize: 15,
+//     fontFamily: "arial"
+//   },
+//   data: [{
+//     type: "pie",
+//     percentFormatString: "#0",
+//     toolTipContent: "{legendText}",
+//     showInLegend: true,
+//     indexLabelPlacement: "outside",    
+//     indexLabelFontSize: 15,
+//     indexLabelMaxWidth: 53,   
+//     indexLabel: "{y} (#percent%)",         
+//     startAngle: 270,
+//     color:["#6d9cad"],
+//     dataPoints: [
+//         {  y: 6, indexLabel:"M&S(C&H) 6%"},
+//         {  y: 6, indexLabel:"Next UK ex-credit 6%"},
+//         {  y: 5, indexLabel:"Primark UK 5%" },
+//         {  y: 3, indexLabel:"Archadia 3%", color:"rgb(47, 74, 117)"},
+//         {  y: 4, indexLabel:"TK Maxx 4%" },
+//         {  y: 4, indexLabel:"JD Sports 4%" },
+//         {  y: 2, indexLabel:"debenhams UK 2%", color:"rgb(47, 74, 117)" },
+//         {  y: 3, indexLabel:"Sports Direct UK 3%" },
+//         {  y: 2, indexLabel:"New Look UK 2%", color:"rgb(47, 74, 117)" },
+//         {  y: 2, indexLabel:"H&M UK 2%" },
+//         {  y: 2, indexLabel:"Matarian 2%" },
+//         {  y: 2, indexLabel:"Rover Island 2%" },
+//         {  y: 2, indexLabel:"ASOS 2%" },
+//         {  y: 1, indexLabel:"Bochoo 1%" },
+//         {  y: 1, indexLabel:"EWM 1%", color:"rgb(47, 74, 117)" },
+//         {  y: 53, indexLabel:"Rest of market 53%" },
+//     ]
+//   }]
+// });
+
+// chart.render();
+
+  }
+
+  
+
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js
+  "></script>
+  sc
+  </head>
+  <body>
+    <div id="chartContainer" style="height: 300px; width: 100%;">
+    </div>
+    <div id="chartContainer2" style="height: 300px; width: 100%;">
+    </div>
+
+  </body>
+  </html>
